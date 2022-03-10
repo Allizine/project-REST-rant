@@ -75,7 +75,7 @@ REST-Rant is an app where users can review restaurants.
 </table>
 
 <h2 align="center">Database</h2>
-<table>
+<table align="center">
 <tbody>
 <thead>
 <tr>
