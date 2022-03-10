@@ -6,6 +6,15 @@
 <h2>Purpose</h2>
 REST-Rant is an app where users can review restaurants. 
 
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>Path</th>
+<th>Purpose</th>
+</tr>
+</thead>
+</table>
 
 ### 🏠 [Homepage](https://github.com/Soullessly/project-REST-rant)
 
