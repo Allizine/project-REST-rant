@@ -6,6 +6,7 @@
 <h2>Purpose</h2>
 REST-Rant is an app where users can review restaurants. 
 
+<h2 align="center">Routing Table</h2>
 <table>
 <thead>
 <tr>
@@ -69,6 +70,42 @@ REST-Rant is an app where users can review restaurants.
 <td>GET</td>
 <td>*</td>
 <td>404 page (matches any route not defined)</td>
+</tr>
+</tbody>
+</table>
+
+<h2 align="center">Database</h2>
+<table>
+<tbody>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+</tr>
+</thead>
+<tr>
+<td>_id</td>
+<td>Object id</td>
+</tr>
+<tr>
+<td>name</td>
+<td>String</td>
+</tr>
+<tr>
+<td>city</td>
+<td>String</td>
+</tr>
+<tr>
+<td>state</td>
+<td>String</td>
+</tr>
+<tr>
+<td>cuisine</td>
+<td>String</td>
+</tr>
+<tr>
+<td>pic</td>
+<td>String</td>
 </tr>
 </tbody>
 </table>
