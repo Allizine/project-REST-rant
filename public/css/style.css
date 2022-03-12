@@ -1,3 +1,10 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap');
+:root {
+ --main-color: cornflowerblue;
+
+ }
+
 h1 {
  text-align: center;
  color: cornflowerblue;

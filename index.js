@@ -1,6 +1,7 @@
 // Modules and Globals
 require('dotenv').config()
 const express = require('express')
+const res = require('express/lib/response')
 const app = express()
 
 // Express Settings
