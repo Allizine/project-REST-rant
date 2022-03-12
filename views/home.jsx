@@ -12,7 +12,7 @@ function home () {
         Photo by <a href="AUTHOR_LINK">Brenda Godinez</a> on <a href="UNSPLASH_LINK">Unsplash</a>
       </div>
     </div>
-    <a href=" views/places/index.jsx">
+    <a href="/places">
         <button className="btn-primary">Places Page</button>
     </a>
 </main>

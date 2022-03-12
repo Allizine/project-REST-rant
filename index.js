@@ -2,6 +2,7 @@
 require('dotenv').config()
 const express = require('express')
 const res = require('express/lib/response')
+const router = require('./controllers/places')
 const app = express()
 
 // Express Settings
@@ -16,6 +17,7 @@ app.use('/places', require('./controllers/places'))
 app.get('/', (req, res) => {
     res.render('home')
 })
+
 
 app.get('*', (req, res) => {
     res.render('error404')
