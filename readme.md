@@ -114,7 +114,7 @@ REST-Rant is an app where users can review restaurants.
 
 ## Author
 
-👤 **Alexander Barthel**
+👤 **Alexander Barthel** 🍕
 
 * Github: [@Soullessly](https://github.com/Soullessly)
 
