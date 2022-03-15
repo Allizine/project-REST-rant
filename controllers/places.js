@@ -2,7 +2,7 @@ const router = require("express").Router();
 const places = require("../models/places.js");
 
 router.get("/", (req, res) => {
-  res.render("places/index", { places });
+  res.render("places/index", {places});
 });
 
 router.post("/", (req, res) => {
@@ -31,7 +31,7 @@ router.get("/:id", (req, res) => {
   } else if (!places[id]) {
     res.render("error404");
   } else {
-    res.render("places/show", { place: places[id], id });
+    res.render("places/show", { place:places[id], id });
   }
 });
 
