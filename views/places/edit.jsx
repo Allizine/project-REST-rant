@@ -1,4 +1,5 @@
-// c: Coding beep boop? c:
+const React = require('react')
+const Def = require('../default')
 
 
 function edit_form ({place, id}) {
