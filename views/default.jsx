@@ -17,7 +17,7 @@ function Def (html) {
             </nav> 
                 {html.children}
             </body>
-            <footer class="footer">Copyright © Rest-Rant 2022</footer>
+            <footer className="footer">Copyright © Rest-Rant 2022</footer>
         </html>
     )
 }

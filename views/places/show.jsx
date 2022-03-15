@@ -1,7 +1,7 @@
 const React = require('react')
 const Def = require('../default')
 
-function show ({place, id}) {
+function show (place, id) {
     return (
         <Def>
           <main>
@@ -12,9 +12,9 @@ function show ({place, id}) {
             </form>    
           </main>
         </Def>
-    )
+    );
 }
 
-module.exports = show
+module.exports = show;
 
 
