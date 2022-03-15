@@ -11,8 +11,8 @@ h1 {
 }
 
 nav {
-    background-color: cornflowerblue;
-    padding: 10px;
+    background-color: #eec0c6;
+background-image: linear-gradient(315deg, #eec0c6 0%, #e58c8a 74%);
 }
 
 nav ul {
@@ -31,12 +31,11 @@ nav a {
 }
 
 nav a:hover {
-    color: pink;
+    color: black;
     text-decoration: none;
 }
 
 body {
-    background-color: lightblue;
     text-align: center;
   }
   

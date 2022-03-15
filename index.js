@@ -12,21 +12,16 @@ app.use(express.static('public'))
 app.use(express.urlencoded({ extended: true }))
 app.use(methodOverride('_method'))
 
-
 // Controllers & Routes
-//Places Page
 app.use('/places', require('./controllers/places'))
 
-//Home Page
 app.get('/', (req, res) => {
     res.render('home')
 })
-//404 Page
+
 app.get('*', (req, res) => {
     res.render('error404')
 })
 
 // Listen for Connections
 app.listen(process.env.PORT)
-
-
