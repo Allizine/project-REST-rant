@@ -9,4 +9,4 @@ const placeSchema = new mongoose.Schema({
   founded: Number
 })
 
-module.exports = mongoose.model('place', placeSchema)
+module.exports = mongoose.model('Place', placeSchema)

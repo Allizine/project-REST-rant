@@ -1,27 +1,27 @@
-const router = require("express").Router()
+const router = require('express').Router()
 const db = require('../models')
 
 router.get('/', (req, res) => {
-  db.Place.create(req.body)
-  .then (() => {
-    res.redirect('/places/index'), { places } 
-  })
-  .catch (err => {
-    console.error('err', err)
-    res.render('error404')
-  })
-},
+    db.Place.find()
+    .then((places) => {
+      res.render('places/index', { places })
+    })
+    .catch(err => {
+      console.log(err) 
+      res.render('error404')
+    })
+})
 
 router.post('/', (req, res) => {
   db.Place.create(req.body)
-  .then (() => {
-    res.redirect('/places')
+  .then(() => {
+      res.redirect('/places')
   })
-  .catch (err => {
-    console.error('err', err)
-    res.render('error404')
+  .catch(err => {
+      console.log('err', err)
+      res.render('error404')
+  })
 })
-},
 
 router.get('/new', (req, res) => {
   res.render('places/new')
@@ -47,15 +47,14 @@ router.delete('/:id', (req, res) => {
 }),
 
 router.get('/:id/edit', (req, res) => {
-  res.send('GET edit form stub')
-})),
+
+}),
 
 router.post('/:id/rant', (req, res) => {
-  res.send('GET /places/:id/rant stub')
 }),
 
 router.delete('/:id/rant/:rantId', (req, res) => {
     res.send('GET /places/:id/rant/:rantId stub')
-})),
+}),
 
 module.exports = router
