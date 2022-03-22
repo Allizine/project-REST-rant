@@ -30,7 +30,7 @@ router.post('/', (req, res) => {
   else {
       res.render('error404')
   }
-
+},
 
 router.get('/new', (req, res) => {
   res.render('places/new')
