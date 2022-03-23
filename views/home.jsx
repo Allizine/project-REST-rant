@@ -8,7 +8,7 @@ function home () {
     <h1>REST-RANT</h1>
     <a href="/places">Come take a look at our places</a>
     <div>
-      <img src="/images/chia-fruit-drink.jpg" alt="Chia Fruit Shake" />
+      <img src="https://placem.at/people?w=500" alt="Chia Fruit Shake" />
       <div>
         Photo by <a href="AUTHOR_LINK">Brenda Godinez</a> on <a href="UNSPLASH_LINK">Unsplash</a>
       </div>
