@@ -7,7 +7,7 @@ function show(data) {
     comments = data.place.comments.map((c) => {
       return (
         <div className='border'>
-          <h2 className='rant'>{c.rant ? "Rant! 😡" : "Rave! 😻"}</h2>
+          <h2 className='rant'>{c.rant ? "Rant!" : "Rave!"}</h2>
           <h4>{c.content}</h4>
           <h3>
             <stong>- {c.author}</stong>
@@ -17,7 +17,20 @@ function show(data) {
       );
     });
   }
+  let rating = <div className='inactive'>Not yet rated</div>;
+  let stars = "";
 
+  if (data.place.comments.length) {
+    let sumRatings = data.place.comments.reduce((tot, c) => {
+      return tot + c.stars;
+    }, 0);
+    let averageRating = Math.round(sumRatings / data.place.comments.length);
+    rating = <h3>{Math.round(averageRating)} stars</h3>;
+    stars = "";
+    for (let i = 0; i < averageRating; i++) {
+      stars += "⭐️";
+    }
+  }
   return (
     <Def>
       <main>
@@ -61,8 +74,9 @@ function show(data) {
           </div>
 
           <input className='btn btn-primary' type='submit' value='Add Comment' />
+        <form method="POST" action={`/places/${data.place.id}/comment/${c.id}?_method=DELETE`}>
+          <input type="submit" className="btn btn-danger" value="Delete Comment" />
         </form>
-
       </main>
     </Def>
   );
