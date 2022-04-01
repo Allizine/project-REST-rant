@@ -74,7 +74,7 @@ function show(data) {
           </div>
 
           <input className='btn btn-primary' type='submit' value='Add Comment' />
-        <form method="POST" action={`/places/${data.place.id}/comment/${c.id}?_method=DELETE`}>
+        <form method="POST" action={`/places/${data.place.id}/comment/${c.id}?_method=DELETE`}/>
           <input type="submit" className="btn btn-danger" value="Delete Comment" />
         </form>
       </main>
